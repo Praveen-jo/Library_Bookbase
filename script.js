@@ -1,23 +1,21 @@
 // array to store books objects
 let myLibrary = [];
 
-// Book constructor function
-function Book(title, author, pages) {
-  if (!new.target) {
-    throw Error("You must use the 'new' operator to call the constructor")
+// Book class to create book objects
+class Book {
+  constructor(title, author, pages) {
+    this.id = crypto.randomUUID();
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = false;
   }
-  this.id = crypto.randomUUID();
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.isRead = false;
-}
-// Book prototype function to save memory (common for all instances of book object)
-Book.prototype.toggleRead = function () {
-  this.isRead = !this.isRead;
-}
-Book.prototype.info = function () {
-  return `${this.title} by ${this.author}, ${this.pages} pages, ${this.isRead ? 'read' : 'not read yet'}`
+  toggleRead() {
+    this.isRead = !this.isRead;
+  }
+  info() {
+    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.isRead ? 'read' : 'not read yet'}`
+  }
 }
 
 // function to add a book to the library array
