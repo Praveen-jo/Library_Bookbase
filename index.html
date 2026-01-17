@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Base</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="sidebar">
+      <h1 class="sidebar-title">Book Base</h1>
+      <nav class="sidebar-nav">
+        <ul class="sidebar-nav-list">
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">🏠</span>
+            <span class="sidebar-nav-item-text">Discover</span>
+          </li>
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">📚</span>
+            <span class="sidebar-nav-item-text">Category</span>
+          </li>
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">📖</span>
+            <span class="sidebar-nav-item-text">My Library</span>
+          </li>
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">⬇️</span>
+            <span class="sidebar-nav-item-text">Download</span>
+          </li>
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">⭐</span>
+            <span class="sidebar-nav-item-text">Favourite</span>
+          </li>
+          <hr />
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">⚙️</span>
+            <span class="sidebar-nav-item-text">Settings</span>
+          </li>
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">🆘</span>
+            <span class="sidebar-nav-item-text">Support</span>
+          </li>
+          <li class="sidebar-nav-item">
+            <span class="sidebar-nav-item-icon">🚪</span>
+            <span class="sidebar-nav-item-text">Logout</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search your favorite books" class="search-input">
+        <button type="reset" class="clear-button">Clear</button>
+      </div>
+      <div class="add-book-button">
+        <span class="add-book-icon">+</span>
+        <span class="add-book-text">Add Book</span>
+      </div>
+      <div class="user">
+        <span class="user-icon">👤</span>
+        <span class="user-text">Guest</span>
+      </div>
+    </header>
+    <div class="content-area">
+      <div class="top-section">
+        <h2 class="top-section-title">Recommended</h2>
+        <button class="see-all-button">See All</button>
+      </div>
+      <div class="book-cards-container"></div>
+    </div>
+    <div class="details-panel"></div>
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
